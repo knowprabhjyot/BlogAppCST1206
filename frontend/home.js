@@ -3,7 +3,7 @@ let blogsList = [];
 function checkIfUserLoggedIn() {
     const token = localStorage.getItem('token');
     if (!token) {
-        window.location.href = 'http://localhost:4000';
+        window.location.href = 'https://blogappcst1206.onrender.com';
     }
 }
 
@@ -88,7 +88,7 @@ async function generateAllBlogs(blogsList) {
 function logout(event) {
     event.preventDefault();
     localStorage.removeItem('token');
-    window.location.href = 'http://localhost:4000';
+    window.location.href = 'https://blogappcst1206.onrender.com';
 }
 
 checkIfUserLoggedIn();
